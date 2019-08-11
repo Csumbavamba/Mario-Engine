@@ -19,7 +19,6 @@ struct AnimationSettings
 	 */
 	AnimationSettings(int startFrame, int endFrame, bool isLooping, float playSpeed);
 
-private:
 	int startFrame = 0;
 	int endFrame = 0;
 	bool isLooping = true;
@@ -43,7 +42,9 @@ public:
 	 * Updates the current frame of the animation.
 	 */
 	void Play();
-	
+
+	/** @return The Settings of the Animation - Start End Frames, Whether it's looping, Playing Speed */
+	AnimationSettings GetSettings() const;
 
 private:
 
