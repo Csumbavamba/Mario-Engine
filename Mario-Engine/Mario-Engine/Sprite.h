@@ -19,6 +19,7 @@ struct AnimationSettings
 	 */
 	AnimationSettings(int startFrame, int endFrame, bool isLooping, float playSpeed);
 
+private:
 	int startFrame = 0;
 	int endFrame = 0;
 	bool isLooping = true;

@@ -30,5 +30,17 @@
     <ClInclude Include="Scene.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Text.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
