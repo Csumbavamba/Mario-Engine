@@ -13,10 +13,10 @@ class Camera2D
 {
 public:
 	Camera2D();
-	~Camera2D();
+	virtual ~Camera2D();
 
 	/** Updates the matrix values for the camera while moving - Called by the engine */
-	void Update();
+	virtual void Update();
 
 	/** @return The view matrix of the camera. */
 	Matrix4 GetViewMatrix();
@@ -46,7 +46,7 @@ public:
 	 * Sets an Object that the camera should follow - it only follows it on the X axes, the Y axes doesn't move
 	 * @param objectToFollow The GameObject that should be followed
 	 */
-	void FollowGameObject(GameObject* objectToFollow);
+	virtual void FollowGameObject(GameObject* objectToFollow);
 
 private:
 

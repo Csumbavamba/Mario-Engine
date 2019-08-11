@@ -10,15 +10,18 @@ class GameObject
 {
 public:
 	GameObject();
-	~GameObject();
+	virtual ~GameObject();
 
 	/** Called after every object has been constructed, tick has not started yet */
 	virtual void Awake();
 
-	/** Called after Awake, Update starts after each Start call has finished */
+	/** Called after every object has called Awake, Update starts after each Start call has finished */
 	virtual void Start();
 
-	/** Called every frame during the game if the GameObject is Active */
+	/** Called every frame while the GameObject is active - Renders any Sprites that the GameObject has */
+	virtual void Render();
+
+	/** Called every frame while the GameObject is active */
 	virtual void Update();
 
 	/**
@@ -34,10 +37,10 @@ public:
 	 * Makes the GameObject active or inactive 
 	 * @param isActive The new activity state of the object
 	 */
-	virtual void SetIsActive(bool isActive);
+	void SetIsActive(bool isActive);
 
 	/** @return The activity state of the GameObject */
-	virtual void GetIsActive() const;
+	void GetIsActive() const;
 
 	/** Holds the position, rotation and scale data of the GameObject */
 	Transform2D transform;
