@@ -32,7 +32,7 @@ class SpriteAnimation
 {
 public:
 	/**
-	 * Creates a sprite animation that is from the given file path and animation settings
+	 * Creates a sprite animation that is loaded from the given file path and set up based on the settings provided
 	 * @param filePath A string reference to the file location.
 	 */
 	SpriteAnimation(std::string filePath, AnimationSettings settings);
@@ -43,7 +43,7 @@ public:
 	 */
 	void Play();
 
-	/** @return The Settings of the Animation - Start End Frames, Whether it's looping, Playing Speed */
+	/** @return The Settings of the Animation - Start - End Frames, Whether it's looping, Playing Speed */
 	AnimationSettings GetSettings() const;
 
 private:
@@ -79,7 +79,7 @@ public:
 	SpriteAnimation* GetCurrentAnimation() const;
 
 	/**
-	 * Updates the animation that the sprite should be playing
+	 * Updates the current animation that the sprite is playing with a new animation
 	 * @param spriteAnimation A sprite animation that is to be played
 	 */
 	void SetCurrentAnimation(SpriteAnimation* spriteAnimation);

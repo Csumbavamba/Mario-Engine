@@ -51,10 +51,10 @@ public:
 
 private:
 	/// Singleton Method
-	Input() {};
-	~Input() {};
-	Input(const Input& copy) {};
-	Input& operator= (const Input& move) {};
+	Input();
+	~Input();
+	Input(const Input& copy);
+	Input& operator= (const Input& move);
 
 	static Input* instance;
 
