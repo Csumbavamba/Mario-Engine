@@ -35,7 +35,7 @@ class AudioSound
 	void StopPlaying();
 
 	/**
-	 * Changes the volume of the sound that is to be played or being played.
+	 * Changes the volume of the sound.
 	 * @param volume A float value that is clamped between 0 and 1
 	 */
 	void SetVolume(float volume);
@@ -43,7 +43,7 @@ class AudioSound
 private:
 
 	/**
-	 * Releases the sound from the Audio Engine's memory. - Called by the Audio Engine
+	 * Releases the sound from the Audio Engine's memory. - Called when deleted
 	 */
 	void ReleaseSound();
 
